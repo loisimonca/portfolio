@@ -1,3 +1,4 @@
+/* Here are the elements */
 h1 {
   color: rgb(6, 173, 165);
   font-family: "Times New Roman", Times, serif;
@@ -16,7 +17,7 @@ img {
   float: left;
   margin-right: 20px;
 }
-
+/* Here are the classes */
 .navbar-light .navbar-brand {
   color: white;
   margin-left: 30px;
@@ -40,7 +41,18 @@ img {
   width: 60%;
   position: relative;
 }
+.navbar-nav .nav-link:active {
+  color: black;
+}
+.btn-primary {
+  background-color: rgb(6, 173, 165);
+  padding: 12px;
+  border-radius: 0%;
+  border-color: rgb(6, 173, 165);
+  width: 100px;
+}
 
+/* Here are the IDs */
 #page-container {
   position: relative;
   min-height: 100px;
@@ -61,16 +73,6 @@ img {
 }
 #footer p {
   padding-top: 10px;
-}
-.navbar-nav .nav-link:active {
-  color: black;
-}
-.btn-primary {
-  background-color: rgb(6, 173, 165);
-  padding: 12px;
-  border-radius: 0%;
-  border-color: rgb(6, 173, 165);
-  width: 100px;
 }
 
 @media only screen and (max-width: 576px) {

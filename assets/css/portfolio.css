@@ -1,3 +1,4 @@
+/* Here are the basic element */
 h1 {
   color: rgb(6, 173, 165);
   font-family: "Times New Roman", Times, serif;
@@ -18,7 +19,7 @@ img {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-
+/* Here are the classes */
 .navbar-light .navbar-brand {
   color: white;
   margin-left: 30px;
@@ -33,7 +34,9 @@ img {
   text-align: auto;
   color: black;
 }
-
+.img-responsive {
+  width: 100%;
+}
 .container {
   background-color: white;
   padding: 50px;
@@ -42,7 +45,7 @@ img {
   width: 60%;
   position: relative;
 }
-
+/* Here are the Id tags */
 #page-container {
   position: relative;
   min-height: 100px;
@@ -50,9 +53,6 @@ img {
 
 #content-wrap {
   padding-bottom: 100px;
-}
-.img-responsive {
-  width: 100%;
 }
 #footer {
   background-color: rgb(94, 93, 93);

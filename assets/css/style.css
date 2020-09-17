@@ -1,3 +1,4 @@
+/* Here are the elements */
 h1 {
   color: rgb(6, 173, 165);
   font-family: "Times New Roman", Times, serif;
@@ -17,7 +18,7 @@ img {
   margin-right: 20px;
   width: 150px;
 }
-
+/* Here are the classes */
 .navbar-light .navbar-brand {
   color: white;
   margin-left: 30px;
@@ -41,7 +42,7 @@ img {
   width: 60%;
   position: relative;
 }
-
+/* Here are the IDs */
 #page-container {
   position: relative;
   min-height: 100px;
