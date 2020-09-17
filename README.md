@@ -12,7 +12,7 @@ https://loisgabor.github.io/portfolio/index.html
 
 ## Screenshot
 
-![aboutMe.jpg](.assets/css/images/aboutMe.jpg)
+![aboutMe](.assets/css/images/aboutMe.jpg)
 
 # License
 
