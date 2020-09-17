@@ -5,7 +5,7 @@ h1 {
   padding-left: 10px;
 }
 body {
-  background-image: url("images/background2-copy.jpg");
+  background-image: url("images/pattern.png");
 }
 p {
   width: 100%;
@@ -62,9 +62,7 @@ img {
 #footer p {
   padding-top: 10px;
 }
-.navbar-nav .nav-link:active {
-  color: black;
-}
+
 @media only screen and (max-width: 576px) {
   .container {
     width: 95%;
