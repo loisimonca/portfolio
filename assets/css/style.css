@@ -15,6 +15,7 @@ p {
 img {
   float: left;
   margin-right: 20px;
+  width: 150px;
 }
 
 .navbar-light .navbar-brand {
@@ -54,7 +55,7 @@ img {
   text-align: center;
   height: 55px;
   position: absolute;
-  bottom: 0;
+  bottom: 1;
   width: 100%;
   border-top: rgb(6, 173, 165);
   border-top-style: solid;
