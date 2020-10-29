@@ -8,11 +8,11 @@ Throughout the setup, we were asked to git commit often for each new step that w
 
 ## Usage
 
-https://loisgabor.github.io/portfolio/index.html
+https://loisgabor.github.io/password-generator/
 
 ## Screenshot
 
-![aboutMe](.assets/css/images/aboutMe.jpg)
+![aboutMe](/assets/css/images/aboutMe.jpg)
 
 # License
 

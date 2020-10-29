@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About me</title>
-    <meta name="description" content="" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -42,6 +42,7 @@
           >
             <!-- These are the navigation buttons  -->
             <nav class="navbar-nav">
+              <hr />
               <a class="nav-link" href="contact.html">Contact</a>
               <a class="nav-link" href="portfolio.html">Portfolio</a>
               <a class="nav-link active" href="index.html">About</a>
@@ -54,44 +55,36 @@
               <div class="row">
                 <h1>About Me</h1>
               </div>
-              <hr />
+
               <section class="row">
                 <div class="col">
                   <!-- This section is the main section of the page -->
                   <p>
-                    <img src="assets/css/images/me.jpg" alt="Photo of Lois" />
-                    Hi! My name is Lois. I am a graphic designer and I am
-                    currently studing coding in hopes to become a web
-                    developer.Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. At ad, hic necessitatibus, animi doloribus
-                    molestias cupiditate placeat, autem nisi totam reprehenderit
-                    temporibus enim. Fugit corrupti laboriosam sint, qui fuga
-                    officiis amet tempore maiores vitae error. Suscipit corrupti
-                    autem ipsam rem consequuntur illo totam. Quia, eveniet,
-                    quaerat aliquam exercitationem qui dolores illum inventore
-                    recusandae et consequuntur, in doloribus eaque! Perspiciatis
-                    officia praesentium nisi alias vel error officiis libero!
-                    Aliquid quasi numquam distinctio dignissimos ex, iusto
-                    fugiat delectus ipsum, accusantium magnam, aperiam unde
-                    veniam tenetur!
+                    <img
+                      id="me"
+                      src="assets/css/images/me.jpg"
+                      alt="Photo of Lois"
+                    />
                   </p>
                   <p>
-                    Voluptas possimus explicabo ipsam assumenda qui amet labore,
-                    aspernatur ipsa debitis ab fuga odio. Cumque obcaecati,
-                    praesentium sunt accusamus nemo minima sint, officia eius,
-                    nisi nesciunt necessitatibus odio animi eligendi quae dolor
-                    corrupti vel ducimus! Error facilis, quo sapiente natus
-                    recusandae consequatur quia sequi distinctio voluptas
-                    officiis omnis non, nisi porro temporibus ea consectetur
-                    possimus amet esse velit reiciendis neque, debitis molestias
-                    atque! Minus libero, tempora unde sequi animi iste vitae
-                    cupiditate earum culpa facilis excepturi dignissimos
-                    obcaecati, voluptatem voluptas officia minima optio autem!
-                    Vitae ipsam, amet quae vel earum ipsum pariatur nesciunt
-                    alias quos veniam officiis tempora id. Molestias voluptatem
-                    architecto nostrum sequi. Vitae itaque iure iusto laboriosam
-                    sint ea voluptate! Magni reiciendis rem repudiandae illum!
+                    Lois has many skills and hobbies, but her favorite is
+                    design. Although she has experience in print work, branding,
+                    and calligraphy, she is most passionate about coding.
+                    Currently enrolled in Georgia Institute of Technology coding
+                    program, Lois aspires to become a full stack web developer.
+                    Lois can take on challenging tasks with creativity and
+                    determination, turning dreams into realities with each new
+                    project.
                   </p>
+
+                  <p>View PDF file of my <a href="Resume.pdf">resume</a>.</p>
+                  <!-- 
+                    <embed
+                      src="Resume.pdf"
+                      type="application/pdf"
+                      width="100%"
+                      height="600px"
+                    /> -->
                 </div>
               </section>
             </div>
@@ -100,8 +93,22 @@
       </div>
     </div>
     <!-- This is the footer -->
-    <footer id="footer">
-      <p>&#169; Copywright</p>
+    <footer id="footer" class="row">
+      <p>
+        &#169; Copyright
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/lois-simonca-598abb16a"
+        >
+          <img
+            class="linkedin-img"
+            src="assets/css/images/linked-in.png"
+            alt="LinkedIn Logo"
+        /></a>
+        <a class="github" href="https://github.com/loisgabor">
+          <img src="assets/css/images/github.png" alt="Github Logo"
+        /></a>
+      </p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
