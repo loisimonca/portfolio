@@ -17,6 +17,10 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -24,7 +28,7 @@
       <div id="content-wrap">
         <!-- This section is the navigation bar  -->
         <header class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html"> Lois Simonca </a>
+          <a class="navbar-brand" href="index.html"> Lois </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,20 +47,21 @@
             <!-- These are the navigation buttons  -->
             <nav class="navbar-nav">
               <hr />
-              <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-              <a class="nav-link active" href="index.html">About</a>
+              <!-- <a class="nav-link" href="contact.html">Contact</a> -->
+              <a href="#target2" class="nav-link">About</a>
+              <a href="#target1" class="nav-link">Portfolio</a>
+              <a href="#target" class="nav-link">Contact</a>
             </nav>
           </div>
         </header>
-        <main class="container">
-          <div class="row">
+        <main id="target2" class="container">
+          <section class="row">
             <div class="col-md-12">
               <div class="row">
                 <h1>About Me</h1>
               </div>
 
-              <section class="row">
+              <div class="row">
                 <div class="col">
                   <!-- This section is the main section of the page -->
                   <p>
@@ -76,8 +81,10 @@
                     determination, turning dreams into realities with each new
                     project.
                   </p>
-
-                  <p>View PDF file of my <a href="Resume.pdf">resume</a>.</p>
+                  <p>
+                    View PDF file of my
+                    <a href="Resume.pdf" target="_blank">resume</a>.
+                  </p>
                   <!-- 
                     <embed
                       src="Resume.pdf"
@@ -86,12 +93,131 @@
                       height="600px"
                     /> -->
                 </div>
-              </section>
+              </div>
             </div>
+          </section>
+          <!-- Here are the portfolio images -->
+          <section id="target1" class="row">
+            <div class="col-md-12">
+              <div class="row portfolio">
+                <h1>Portfolio</h1>
+              </div>
+            </div>
+            <div class="row row-cols-2">
+              <div class="col">
+                <a
+                  href="https://radiant-fortress-68045.herokuapp.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="img-responsive burger"
+                    src="assets/css/images/burgerReal.png"
+                    alt="Placeholder image"
+                /></a>
+              </div>
+              <div class="col">
+                <a
+                  href="https://loisgabor.github.io/password-generator/"
+                  target="_blank"
+                  ><img
+                    class="img-responsive"
+                    src="assets/css/images/password copy.jpg"
+                    alt="Password generator image"
+                /></a>
+              </div>
+              <div class="col">
+                <a
+                  href="https://loisgabor.github.io/weatherDashboard/"
+                  target="_blank"
+                  ><img
+                    class="img-responsive"
+                    src="assets/css/images/weather.jpg"
+                    alt="Placeholder image"
+                /></a>
+              </div>
+
+              <div class="col">
+                <a
+                  href="https://loisgabor.github.io/Movie-Chews/"
+                  target="_blank"
+                >
+                  <img
+                    class="img-responsive"
+                    src="assets/css/images/movie-chews copy.jpg"
+                    alt="Placeholder image"
+                /></a>
+              </div>
+            </div>
+          </section>
+
+          <div id="target" class="row">
+            <h1 class="contact">Contact</h1>
           </div>
+
+          <section class="row">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label>Name</label>
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="form-group col-md-12">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Messages</label>
+
+                <textarea
+                  class="form-control"
+                  id="inputMessages"
+                  rows="3"
+                  cols="50"
+                  placeholder="Messages"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
         </main>
       </div>
     </div>
+
+    <!-- <div class="container">
+  <div class="row row-cols-3"> -->
+    <!-- <div class="float-child"> -->
+    <!-- <a href="https://loisgabor.github.io/password-generator/"
+        ><img
+          class="img-responsive"
+          src="assets/css/images/img1.png"
+          alt="Password generator image"
+      /></a> -->
+    <!-- </div>
+    <div class="float-child"> -->
+    <!-- <a href="https://loisgabor.github.io/weatherDashboard/"
+        ><img
+          class="img-responsive"
+          src="assets/css/images/img22.png"
+          alt="Placeholder image"
+      /></a> -->
+    <!-- </div>
+    <div class="float-child">
+      <a href="https://loisgabor.github.io/Movie-Chews/">
+        <img
+          class="img-responsive"
+          src="assets/css/images/img3.png"
+          alt="Placeholder image"
+      /></a>
+    </div>
+  </div> -->
+
     <!-- This is the footer -->
     <footer id="footer" class="row">
       <p>
@@ -106,7 +232,10 @@
             alt="LinkedIn Logo"
         /></a>
         <a class="github" href="https://github.com/loisgabor">
-          <img src="assets/css/images/github.png" alt="Github Logo"
+          <img
+            class="github"
+            src="assets/css/images/github.png"
+            alt="Github Logo"
         /></a>
       </p>
     </footer>
@@ -124,6 +253,14 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
-    ></script>
+    >
+
+      // $(document).ready(function () {
+      //     $("navbar-nav").click(function () {
+      //         $("navbar-nav").removeClass("active");
+      //         $(this).addClass("active");
+      //     });
+      // });
+    </script>
   </body>
 </html>
