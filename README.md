@@ -8,7 +8,7 @@ Throughout the setup, we were asked to git commit often for each new step that w
 
 ## Usage
 
-https://loisgabor.github.io/password-generator/
+https://loisgabor.github.io/portfolio/
 
 ## Screenshot
 
