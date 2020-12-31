@@ -88,9 +88,9 @@ img {
   width: 30px !important;
 }
 #me {
-  float: right !important;
-  margin-right: 60px !important;
-  width: 300px !important;
+  float: left !important;
+  margin-right: 20px !important;
+  width: 150px !important;
 }
 /* Here are the classes */
 .navbar-light .navbar-brand {
@@ -105,11 +105,8 @@ img {
 }
 .navbar-nav {
   text-align: auto;
+  color: black;
 }
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-}
-
 .active {
   border-bottom: 6px solid;
 }
@@ -117,10 +114,6 @@ img {
   padding: 0px;
   width: 100%;
   position: relative;
-}
-
-.about {
-  margin-top: 100px;
 }
 /* #page-container,
 #content-wrap {
@@ -146,84 +139,6 @@ img {
   padding-top: 10px;
 }
 
-#port1 {
-  background-image: url("./images/burder1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port1:hover {
-  background-image: url("./images/burgerReal.png");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-#port2 {
-  background-image: url("./images/moviee1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port2:hover {
-  background-image: url("./images/movie-chews\ copy.jpg");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-.card {
-  border-radius: 0px;
-}
-#port3 {
-  background-image: url("./images/weather1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port3:hover {
-  background-image: url("./images/weather.jpg");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-#port4 {
-  background-image: url("./images/password1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port4:hover {
-  background-image: url("./images/password\ copy.jpg");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-#port5 {
-  background-image: url("./images/peach1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port5:hover {
-  background-image: url("./images/peach2.jpg");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-#port6 {
-  background-image: url("./images/notes1.jpg");
-  background-size: cover;
-  margin: 20px;
-}
-
-#port6:hover {
-  background-image: url("./images/notes2.jpg");
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-#target1 {
-  margin: auto;
-}
-#target2 {
-  margin-top: 100px;
-}
 @media only screen and (max-width: 576px) {
   .container {
     width: 80%;
@@ -241,11 +156,10 @@ img {
 } */
 
 button {
-  background-color: rgb(96, 117, 121) !important;
+  background-color: rgb(0, 145, 179) !important;
   border: none !important;
-  color: white !important;
 }
 
 button:hover {
-  background-color: rgb(142, 167, 168) !important;
+  background-color: rgb(4, 177, 216) !important;
 }

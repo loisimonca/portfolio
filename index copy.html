@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style copy.css" />
   </head>
   <body>
     <!-- <div id="page-container">
@@ -51,7 +51,7 @@
         </div>
       </header>
       <!-- <div class="hero-wrapper"> -->
-        <div class="parallax" >  
+        <div class="parallax">
           <!-- <figure> -->
   
           <!-- </figure> -->
@@ -59,16 +59,15 @@
       <!-- </div> -->
     </div>
     <div class="container">
- <!-------------------------- This section is the about me -------------------->
     <div id="target2">
-      <div>
       <section class="row">
         <div class="col-md-12">
           <div class="row">
-            <h1 class="about">About Me</h1>
+            <h1>About Me</h1>
           </div>
           <div class="row">
             <div class="col">
+              <!-- This section is the main section of the page -->
               <p>
                 <img
                   id="me"
@@ -77,8 +76,13 @@
                 />
               </p>
               <p>
-                Hi! I am Lois and I live in Buford, Georgia.
-                With an education in design 
+                Lois has many skills and hobbies, but her favorite is design.
+                Although she has experience in print work, branding, and
+                calligraphy, she is most passionate about coding. Currently
+                enrolled in Georgia Institute of Technology coding program, Lois
+                aspires to become a full stack web developer. Lois can take on
+                challenging tasks with creativity and determination, turning
+                dreams into realities with each new project.
               </p>
               <p>
                 View PDF file of my
@@ -96,57 +100,63 @@
         </div>
       </section>
     </div>
-    </div>
-    <!------------------------- Here are the portfolio images ---------------------------->
+    <!-- Here are the portfolio images -->
     <section id="target1" class="row">
       <div class="col-md-12">
         <div class="row portfolio">
           <h1>Portfolio</h1>
         </div>
       </div>
-
-      <a href="https://radiant-fortress-68045.herokuapp.com/" target="_blank">
-        <div class="card" id="port1" style="width: 20rem; height:16rem;">
-          <div class="card-body"></div>
+      <div class="row row-cols-2">
+        <div class="col">
+          <a
+            href="https://radiant-fortress-68045.herokuapp.com/"
+            target="_blank"
+          >
+            <img
+              class="img-responsive burger"
+              src="assets/css/images/burgerReal.png"
+              alt="Placeholder image"
+          /></a>
         </div>
-      </a>
-      <a href="https://loisimonca.github.io/Movie-Chews/" target="_blank">
-        <div class="card" id="port2" style="width: 20rem; height:16rem;">
-          <div class="card-body"></div>
+        <div class="col">
+          <a
+            href="https://loisgabor.github.io/password-generator/"
+            target="_blank"
+            ><img
+              class="img-responsive"
+              src="assets/css/images/password copy.jpg"
+              alt="Password generator image"
+          /></a>
         </div>
-       </a>
-      <a href="https://loisimonca.github.io/weatherDashboard/" target="_blank">
-        <div class="card" id="port3" style="width: 20rem; height:16rem;">
-         <div class="card-body"></div>
+        <div class="col">
+          <a
+            href="https://loisgabor.github.io/weatherDashboard/"
+            target="_blank"
+            ><img
+              class="img-responsive"
+              src="assets/css/images/weather.jpg"
+              alt="Placeholder image"
+          /></a>
         </div>
-     </a>
-     <a href="https://neon-peach.herokuapp.com/" target="_blank">
-      <div class="card" id="port5" style="width: 20rem; height:16rem;">
-       <div class="card-body"></div>
+        <div class="col">
+          <a href="https://loisgabor.github.io/Movie-Chews/" target="_blank">
+            <img
+              class="img-responsive"
+              src="assets/css/images/movie-chews copy.jpg"
+              alt="Placeholder image"
+          /></a>
+        </div>
       </div>
-   </a>
-     <a href="https://loisimonca.github.io/password-generator/" target="_blank">
-      <div class="card" id="port4" style="width: 20rem; height:16rem;">
-       <div class="card-body"></div>
-      </div>
-   </a>
- 
- <a href="https://polar-cove-12928.herokuapp.com/" target="_blank">
-  <div class="card" id="port6" style="width: 20rem; height:16rem;">
-   <div class="card-body"></div>
-  </div>
-</a>
     </section>
-<!------------------------------------This is the contact info section---------------------->
+
     <section id="target" class="row">
       <div class="col-md-12">
         <div class="row">
         <h1 class="contact">Contact</h1>
       </div>
-      </div>
-      <div class="col-md-12">
-      <form action="mailto:loisgabor@yahoo.com" enctype="text/plain">
-        <div class="form-row ">
+      <form>
+        <div class="form-row">
           <div class="form-group col-md-12">
             <label>Name</label>
             <input type="text" class="form-control" placeholder="Name" />
@@ -171,16 +181,43 @@
             placeholder="Messages"
           ></textarea>
         </div>
-        <button type="submit" class="btn submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
     </section>
+    </div>
 
-  
+    <!-- <div class="container">
+  <div class="row row-cols-3"> -->
+    <!-- <div class="float-child"> -->
+    <!-- <a href="https://loisgabor.github.io/password-generator/"
+        ><img
+          class="img-responsive"
+          src="assets/css/images/img1.png"
+          alt="Password generator image"
+      /></a> -->
+    <!-- </div>
+    <div class="float-child"> -->
+    <!-- <a href="https://loisgabor.github.io/weatherDashboard/"
+        ><img
+          class="img-responsive"
+          src="assets/css/images/img22.png"
+          alt="Placeholder image"
+      /></a> -->
+    <!-- </div>
+    <div class="float-child">
+      <a href="https://loisgabor.github.io/Movie-Chews/">
+        <img
+          class="img-responsive"
+          src="assets/css/images/img3.png"
+          alt="Placeholder image"
+      /></a>
+    </div>
+  </div> -->
 
-    <!-----------------------This is the footer ------------------------------------>
-    <footer id="footer" class="row"> 
-      <p> &#169; Copyright
+    <!-- This is the footer -->
+    <!-- <footer id="footer" class="row">
+      <p>
+        &#169; Copyright
         <a
           class="linkedin"
           href="https://www.linkedin.com/in/lois-simonca-598abb16a"
@@ -197,12 +234,7 @@
             alt="Github Logo"
         /></a>
       </p>
-    </footer> 
-  </body>
-    
-
-
-    
+    </footer> -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -219,5 +251,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-
+  </body>
 </html>
