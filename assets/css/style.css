@@ -7,9 +7,10 @@ body {
   padding: 0;
   background-color: white;
 }
+
 .navbar {
   position: fixed;
-  background-color: rgb(142, 167, 168) !important;
+  background-color: rgba(142, 167, 168) !important;
   text-align: center;
   left: 0;
   width: 100%;
@@ -33,14 +34,29 @@ figure {
 
 .parallax {
   background-image: url("./images/background1.jpg");
-  height: 700px;
+  height: 100vh;
+  /* height: 700px; */
+  /* min-height: 900px; */
+  /* background: transparent; */
   background-attachment: fixed;
-  background-position: center;
+  background-color: #9fb5b6;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   z-index: 2;
 }
+/* .parallax-mirror,
+#vurtUnderlay {
+  height: auto !important;
+  width: 100% !important;
+  padding: 45% 0 0;
+}
+.parallax-mirror img {
+  width: 100% !important;
+  height: 100% !important;
+} */
+
 h1 {
   color: rgb(0, 145, 179);
   font-family: "Times New Roman", Times, serif;
@@ -59,10 +75,9 @@ body {
 .contact {
   margin-top: 100px;
 }
-/* section {
-  padding: 50px;
+section {
   background-color: white;
-} */
+}
 p {
   width: 100%;
   margin-left: 15px;
@@ -255,5 +270,15 @@ button:hover {
   }
   .navbar-light .navbar-nav .nav-link {
     text-align: center !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .parallax {
+    background-image: url("./images/background-mobile.jpg");
+    background-position: center;
+    background-size: contain !important;
+    background-attachment: scroll !important;
+    /* background-size: contain; */
+    /* height: 300px; */
   }
 }
