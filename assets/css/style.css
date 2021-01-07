@@ -278,7 +278,6 @@ button:hover {
     background-position: center;
     background-size: contain !important;
     background-attachment: scroll !important;
-    /* background-size: contain; */
     /* height: 300px; */
   }
 }
