@@ -14,7 +14,7 @@ body {
   text-align: center;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 
 .bottom-nav {
@@ -33,18 +33,89 @@ figure {
 }
 
 .parallax {
-  background-image: url("./images/background1.jpg");
+  /* background-image: url("./images/background1.jpg"); */
   height: 100vh;
   /* height: 700px; */
   /* min-height: 900px; */
   /* background: transparent; */
   background-attachment: fixed;
-  background-color: #9fb5b6;
+  background-color: #c8dedf;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  z-index: 2;
+  z-index: -999;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 25;
+}
+.i-am-lois {
+  font-size: 9vw;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  text-align: center !important;
+  top: calc(50% - 15rem);
+  width: 100%;
+  line-height: 4rem;
+  z-index: 19;
+}
+
+.i-am-a {
+  animation-duration: 300ms;
+  font-size: 4vw;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  text-align: center !important;
+  top: calc(50% - 4rem);
+  width: 100%;
+  line-height: 4rem;
+  z-index: 19;
+}
+
+.web-developer {
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  font-size: 6vw;
+  margin: auto;
+  width: 100%;
+  text-align: center !important;
+  /* bottom: 300px; */
+  /* left: 37%; */
+  top: calc(60%);
+  line-height: 6rem;
+  color: black;
+}
+
+.graphic-designer {
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  font-size: 6vw;
+  margin: auto;
+  width: 100%;
+
+  bottom: -180px;
+  /* text-align: center !important; */
+  /* bottom: 300px; */
+  left: 20%;
+  /* top: calc(50%); */
+  line-height: 6rem;
+  color: black;
 }
 /* .parallax-mirror,
 #vurtUnderlay {
@@ -64,6 +135,7 @@ h1 {
   padding-left: 10px;
   margin-bottom: 30px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -78,9 +150,12 @@ body {
 section {
   background-color: white;
 }
-p {
-  width: 100%;
-  margin-left: 15px;
+.bio {
+  width: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 10px;
+  /* margin-left: 15px; */
 }
 /* .linkedin {
   width: 20px;
@@ -88,11 +163,11 @@ p {
 .github {
   width: 5%;
 }
-img {
-  width: 90%;
+/* img {
+  width: 100%;
   margin: 30px;
   transition: width 2s, height 2s, transform 0.25s;
-}
+} */
 .img-responsive:hover {
   transform: scale(1.05);
 }
@@ -104,7 +179,8 @@ img {
 }
 #me {
   float: right !important;
-  margin-right: 60px !important;
+  margin-right: 0;
+  /* margin-right: 30px !important; */
   width: 300px !important;
 }
 /* Here are the classes */
@@ -141,7 +217,7 @@ img {
 }
 
 .about {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 /* #page-container,
 #content-wrap {
@@ -152,17 +228,73 @@ img {
 #content-wrap {
   padding-bottom: 100px;
 } */
-
-#port1 {
-  background-image: url("./images/burder1.jpg");
-  background-size: cover;
-  margin: 20px;
+.card-body {
+  padding: 0;
 }
-
-#port1:hover {
-  background-image: url("./images/burgerReal.png");
+.containerPortfolio1 {
+  position: relative;
+  width: 50%;
+  padding: 0px;
+  /* margin: 20px; */
+}
+#port1 {
+  /* object-fit: cover; */
+  opacity: 1;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  /* width: 100%;
+  height: auto; */
+  transition: 0.2s ease;
+  backface-visibility: hidden;
+  width: 319px !important;
+  height: 254px !important;
+  object-fit: cover !important;
+  /* opacity: 1;
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  object-fit: cover; */
+}
+.card-body > img {
+  width: 100%;
+  margin: 0px;
+  /* width: 319px !important;
+  height: 254px !important;
+  object-fit: cover !important; */
+  transition: width 2s, height 2s, transform 0.2s;
+}
+.port1a {
+  opacity: 1;
+  position: relative;
+  width: 319px !important;
+  height: 254px !important;
+  object-fit: cover !important;
+  z-index: 4;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  text-align: center;
+  transition: 0.2s ease;
+  /* opacity: 0;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  margin: 0 !important;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; */
+}
+.containerPortfolio1:hover #port1 {
+  opacity: 0;
+}
+.containerPortfolio1:hover .port1a {
+  /* opacity: 1; */
   transform: scale(1.05);
-  transition: 0.3s;
+  top: 0;
+  left: 0;
 }
 
 #port2 {
@@ -174,10 +306,11 @@ img {
 #port2:hover {
   background-image: url("./images/movie-chews\ copy.jpg");
   transform: scale(1.05);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .card {
   border-radius: 0px;
+  margin: 20px;
 }
 #port3 {
   background-image: url("./images/weather1.jpg");
@@ -188,7 +321,7 @@ img {
 #port3:hover {
   background-image: url("./images/weather.jpg");
   transform: scale(1.05);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 #port4 {
   background-image: url("./images/password1.jpg");
@@ -229,7 +362,7 @@ img {
   margin: auto;
 }
 #target2 {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 #footer {
