@@ -34,8 +34,8 @@ window.addEventListener("scroll", () => {
     let speed = element.dataset.speed;
     element.style.transform = `translateY(${scroll * speed}px)`;
   });
-  webDevHeader.style.opacity = -scroll / (header_height / 10) + 2.6;
-  graphicHeader.style.opacity = -scroll / (header_height / 2) + 1.1;
+  // webDevHeader.style.opacity = -scroll / (header_height / 6) + 3;
+  // graphicHeader.style.opacity = -scroll / (header_height / 2) + 1.1;
   // if (scroll < 50) {
   //   graphicHeader.style.opacity = scroll / (header_height * 12);
   // } else {
@@ -44,11 +44,11 @@ window.addEventListener("scroll", () => {
   // if (scroll > 300) {
   //   graphicHeader.style.opacity = -scroll / (header_height / 2) + 1;
   // }
-  if (scroll > 400) {
-    iAm.style.opacity = -scroll / header_height + 0.6;
-    iAmLois.style.opacity = -scroll / header_height + 0.6;
-  } else {
-    iAm.style.opacity = 1;
-    iAmLois.style.opacity = 1;
-  }
+  // if (scroll > 400) {
+  //   iAm.style.opacity = -scroll / header_height + 0.6;
+  //   iAmLois.style.opacity = -scroll / header_height + 0.6;
+  // } else {
+  //   iAm.style.opacity = 1;
+  //   iAmLois.style.opacity = 1;
+  // }
 });
