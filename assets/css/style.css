@@ -6,6 +6,8 @@ body {
   margin: 0px;
   padding: 0;
   background-color: white;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -26,25 +28,48 @@ body {
   position: fixed;
   top: 0;
 }
+.navbar-light .navbar-brand {
+  color: rgb(0, 145, 179);
+  margin-left: 30px;
+  font-size: 300%;
+}
+.navbar-brand {
+  color: rgb(4, 139, 192);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+.navbar-nav {
+  text-align: auto;
+  flex-direction: row !important;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  border-color: white;
+  border-radius: 10px;
+  color: white !important;
+  border: solid white 4px !important;
+  transition-duration: 0.2s;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  border: transparent solid 4px;
+  font-weight: 800;
+  padding-left: 10px !important;
+  margin-right: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: solid white 4px;
+  padding-bottom: 1px;
+  transition-duration: 0.2s;
+  color: white;
+}
 
 figure {
   margin: 0;
   position: relative;
-}
-
-.parallax {
-  /* background-image: url("./images/background1.jpg"); */
-  height: 100vh;
-  /* height: 700px; */
-  /* min-height: 900px; */
-  /* background: transparent; */
-  background-attachment: fixed;
-  background-color: #c8dedf;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  z-index: -999;
 }
 
 header {
@@ -77,15 +102,24 @@ header {
   font-weight: 600;
   padding-bottom: 20px;
 }
+.linea {
+  margin-bottom: 40px;
+}
 #see-my-work {
+  margin-top: 140px !important;
   border-radius: 50px;
+  color: white;
+  padding: 17px;
+  background-color: rgb(96, 117, 121) !important;
   z-index: 99999 !important;
   width: 200px;
   height: 70px;
   font-size: 25px !important;
 }
 #see-my-work:hover {
-  background: rgb(109, 153, 140) (107, 107, 107) !important;
+  background: rgb(109, 153, 140) !important;
+  transition-duration: 0.3s;
+  text-decoration: none;
 }
 .i-am-lois {
   font-size: 4vw;
@@ -100,61 +134,6 @@ header {
   margin-right: 10px !important;
 }
 
-.i-am-a {
-  animation-duration: 300ms;
-  font-size: 4vw;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  text-align: center !important;
-  top: calc(50% - 14rem);
-  width: 100%;
-  line-height: 4rem;
-  z-index: 19;
-}
-
-.web-developer {
-  animation-duration: 300ms;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  font-size: 6vw;
-  margin: auto;
-  width: 100%;
-  text-align: center !important;
-  /* bottom: 300px; */
-  /* left: 37%; */
-  top: calc(50% - 5rem);
-  line-height: 6rem;
-  color: black;
-}
-
-.graphic-designer {
-  animation-duration: 300ms;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  font-size: 6vw;
-  margin: auto;
-  width: 100%;
-  top: calc(70% - 5rem);
-
-  /* bottom: -180px; */
-  /* text-align: center !important; */
-  /* bottom: 300px; */
-  left: 20%;
-  /* top: calc(50%); */
-  line-height: 6rem;
-  color: black;
-}
-/* .parallax-mirror,
-#vurtUnderlay {
-  height: auto !important;
-  width: 100% !important;
-  padding: 45% 0 0;
-}
-.parallax-mirror img {
-  width: 100% !important;
-  height: 100% !important;
-} */
-
 h1 {
   color: black;
   /* font-family: "Times New Roman", Times, serif; */
@@ -165,26 +144,44 @@ h1 {
   margin-bottom: 30px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-body {
-  /* background-image: url("images/background2-copy.jpg"); */
-  /* background-color: rgb(245, 240, 235); */
-  font-family: "Montserrat", sans-serif;
-}
 .contact {
   margin-top: 100px;
 }
 section {
   background-color: white;
 }
+
+.bio-container {
+  width: 70%;
+  float: left;
+}
 .bio {
-  width: 50%;
   font-size: 20px;
   line-height: 40px;
   margin-left: 10px;
-  /* margin-left: 15px; */
+  padding-right: 50px;
+  text-align: justify;
+}
+
+.languages {
+  float: right;
+  border: 3px #c8dedf solid;
+  padding: 20px;
+  width: 30%;
+}
+.languages p {
+  text-align: center;
+  font-size: 20px;
+}
+.languages ul {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.languages li {
+  list-style-type: none;
+  text-align: center;
+  line-height: 30px;
 }
 /* .linkedin {
   width: 20px;
@@ -206,38 +203,12 @@ section {
 .github {
   width: 30px !important;
 }
-#me {
+/* #me {
   float: right !important;
   margin-right: 0;
-  /* margin-right: 30px !important; */
   width: 300px !important;
-}
+} */
 /* Here are the classes */
-.navbar-light .navbar-brand {
-  color: rgb(0, 145, 179);
-  margin-left: 30px;
-  font-size: 300%;
-}
-.navbar-brand {
-  color: rgb(4, 139, 192);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-}
-.navbar-nav {
-  text-align: auto;
-  flex-direction: row !important;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  font-weight: 800;
-  padding-left: 10px !important;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  border-bottom: solid white 4px;
-  padding-bottom: 1px;
-  color: white;
-}
 
 .container {
   padding: 0px;
@@ -247,6 +218,7 @@ section {
 
 .about {
   margin-top: 0px;
+  padding-top: 20px;
 }
 /* #page-container,
 #content-wrap {
@@ -264,12 +236,16 @@ section {
   margin-top: 18px;
   opacity: 0;
 }
-.portfolioDiv {
+.project-container {
   height: 18rem;
   width: 319px !important;
   margin: auto !important;
   margin-top: 30px !important;
   transition-duration: 0.8s;
+}
+.portfolioDiv {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 .containerPortfolio1 {
   position: relative;
@@ -330,12 +306,12 @@ section {
 .containerPortfolio1:hover #port1 {
   opacity: 0;
 }
-.portfolioDiv:hover {
+.project-container:hover {
   height: 25rem !important;
   transition: 0.57s;
   transition-duration: 0.2s ease-in-out;
 }
-.portfolioDiv:hover .project-description {
+.project-container:hover .project-description {
   opacity: 1 !important;
   transition: 0.7s;
 }
@@ -455,7 +431,7 @@ button:hover {
 }
 @media only screen and (max-width: 920px) {
   #me-graphic {
-    width: 400px;
+    width: 500px;
     height: auto;
     margin-top: 50px;
     transition-duration: 3s;
@@ -486,8 +462,16 @@ button:hover {
 } */
 
 @media screen and (max-width: 660px) {
+  .portfolioDiv {
+    height: 25rem !important;
+  }
+
   #header-font {
     font-size: 40px;
+  }
+  .project-description {
+    margin-top: 18px;
+    opacity: 1;
   }
   #me-graphic {
     margin-left: -100px !important;
@@ -498,7 +482,7 @@ button:hover {
     margin-top: -36px;
     padding: 0;
     margin-left: -10px !important; */
-    opacity: 0.3;
+    opacity: 0.25;
   }
   #see-my-work {
     height: 50px;

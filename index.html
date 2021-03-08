@@ -22,6 +22,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -49,9 +54,9 @@
         >
           <nav class="navbar-nav justify-content-end">
             <hr />
-            <a href="#target2" class="nav-link">About</a>
+            <a href="#target2" class="nav-link about-link">About</a>
             <a href="#target1" class="nav-link">Portfolio</a>
-            <a href="#target" class="nav-link">Contact</a>
+            <a href="#target" class="nav-link contact-link">Contact</a>
           </nav>
         </div>
         <img id="me-graphic" src="./assets/css/images/megraphic-04.png" />
@@ -64,22 +69,9 @@
         <div class="i-am-lois">
           <p id="header-font">I'm Lois</p>
           <p>I am a web developer</p>
-          <p>and graphic designer</p>
-          <button href="#target2" id="see-my-work">See my work</button>
+          <p class="linea">and graphic designer</p>
+          <a href="#target" id="see-my-work">Contact Me!</a>
         </div>
-
-        <!-- <img src="./assets/css/images/bacgroundcolor-01.jpg" /> -->
-        <!-- <img src="assets/css/images/i-am-a.png" class="i-am-a translate" data-speed=".3"> -->
-        <!-- <h2 class="i-am-a translate" data-speed=".8">& I am a</h2> -->
-        <!-- <img src="assets/css/images/graphic-designer.png" class="graphic-designer translate" data-speed="-4"> -->
-
-        <!-- <h2 class="web-developer translate" data-speed=".6">WEB DEVELOPER</h2>
-        <h2 class="graphic-designer translate" data-speed="-.3">
-          GRAPHIC DESIGNER
-        </h2> -->
-        <!-- <img src="assets/css/images/web-developer.png" class="web-developer translate" data-speed="-4"> -->
-
-        <!-- </div> -->
       </header>
       <!-- <div class="hero-wrapper"> -->
 
@@ -87,7 +79,8 @@
     </div>
     <div class="container">
       <!-------------------------- This section is the about me -------------------->
-      <div id="target2">
+      <div id="target2"></div>
+      <div>
         <div>
           <section class="row">
             <div class="col-md-12">
@@ -96,25 +89,45 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <img
+                  <!-- <img
                     id="me"
                     src="assets/css/images/me.jpg"
                     alt="Photo of Lois"
-                  />
+                  /> -->
                   <h1 class="about">About Me</h1>
-                  <p class="bio">
-                    Hi! I am Lois Simonca and I am based in Buford, Georgia. I
-                    am passionate about creating impactful and user friendly web
-                    experiences. With an education in graphic design and 5+
-                    years experience working in the design field, I am shifting
-                    my focus to web development but bringing along creativity
-                    and my drive to develope intuitive, effective and meaningful
-                    digital products. It's time to stand out!
-                  </p>
-                  <p class="bio">
-                    View PDF file of my
-                    <a href="Resume.pdf" target="_blank">resume</a>.
-                  </p>
+                  <div class="row">
+                    <div class="bio-container">
+                      <p class="bio">
+                        Hi! I am Lois Simonca and I am based in Buford, Georgia.
+                        I am passionate about creating impactful and user
+                        friendly web experiences. With an education in graphic
+                        design and 5+ years experience working in the design
+                        field, I am shifting my focus to web development but
+                        bringing along creativity and my drive to develop
+                        intuitive, effective and meaningful digital products.
+                        It's time to stand out!
+                      </p>
+                      <p class="bio">
+                        View PDF file of my
+                        <a href="Resume.pdf" target="_blank">resume</a>.
+                      </p>
+                    </div>
+                    <div class="languages">
+                      <p>Languages and Technologies</p>
+                      <p></p>
+
+                      <ul>
+                        <li>HTML5 + CSS</li>
+                        <li>Adobe Suite</li>
+                        <li>JavaScript + jQuery</li>
+
+                        <li>React</li>
+                        <li>MySQL</li>
+                        <li>NoSQL</li>
+                        <li>Node JS</li>
+                      </ul>
+                    </div>
+                  </div>
                   <!-- 
                     <embed
                       src="Resume.pdf"
@@ -135,62 +148,73 @@
             <h1>Portfolio</h1>
           </div>
         </div>
-        <div class="container portfolioDiv">
-          <a
-            href="http://dvmbuddy.herokuapp.com/"
-            target="_blank"
-            class="card containerPortfolio1"
-            style="width: 20rem; height: 16rem"
-          >
-            <div class="card-body">
-              <img id="port1" src="assets/css/images/dvmBuddy-gr.jpg" />
-              <img class="port1a" src="assets/css/images/dvmBuddy-hover.jpg" />
-            </div>
-          </a>
-          <p class="project-description" style="width: 20rem; height: 7rem">
-            Assist small veterinarian practices to create a better user
-            experience that not only allows an ease of scheduling appointments,
-            but can also add value by offering additional classified sections.
-          </p>
+        <div class="project-container">
+          <div class="container portfolioDiv">
+            <a
+              href="http://dvmbuddy.herokuapp.com/"
+              target="_blank"
+              class="card containerPortfolio1"
+              style="width: 20rem; height: 16rem"
+            >
+              <div class="card-body">
+                <img id="port1" src="assets/css/images/dvmBuddy-gr.jpg" />
+                <img
+                  class="port1a"
+                  src="assets/css/images/dvmBuddy-hover.jpg"
+                />
+              </div>
+            </a>
+            <p class="project-description" style="width: 20rem; height: 7rem">
+              Assist small veterinarian practices to create a better user
+              experience that not only allows an ease of scheduling
+              appointments, but can also add value by offering additional
+              classified sections.
+            </p>
+          </div>
         </div>
-        <div class="container portfolioDiv">
-          <a
-            href="https://radiant-fortress-68045.herokuapp.com/"
-            target="_blank"
-            class="card containerPortfolio1"
-            style="width: 20rem; height: 16rem"
-          >
-            <div class="card-body">
-              <img id="port1" src="assets/css/images/eat-da-burger-gr.jpg" />
-              <img
-                class="port1a"
-                src="assets/css/images/eat-da-burger-hover.jpg"
-              />
-            </div>
-          </a>
-          <p class="project-description" style="width: 20rem; height: 7rem">
-            Assist small veterinarian practices to create a better user
-            experience that not only allows an ease of scheduling appointments,
-            but can also add value by offering additional classified sections.
-          </p>
+        <div class="project-container">
+          <div class="container portfolioDiv">
+            <a
+              href="https://radiant-fortress-68045.herokuapp.com/"
+              target="_blank"
+              class="card containerPortfolio1"
+              style="width: 20rem; height: 16rem"
+            >
+              <div class="card-body">
+                <img id="port1" src="assets/css/images/eat-da-burger-gr.jpg" />
+                <img
+                  class="port1a"
+                  src="assets/css/images/eat-da-burger-hover.jpg"
+                />
+              </div>
+            </a>
+            <p class="project-description" style="width: 20rem; height: 7rem">
+              Assist small veterinarian practices to create a better user
+              experience that not only allows an ease of scheduling
+              appointments, but can also add value by offering additional
+              classified sections.
+            </p>
+          </div>
         </div>
-        <div class="container portfolioDiv">
-          <a
-            href="https://loisimonca.github.io/password-generator/"
-            target="_blank"
-            class="card containerPortfolio1"
-            style="width: 20rem; height: 16rem"
-          >
-            <div class="card-body">
-              <img id="port1" src="assets/css/images/password1.jpg" />
-              <img class="port1a" src="assets/css/images/password copy.jpg" />
-            </div>
-          </a>
-          <p class="project-description" style="width: 20rem; height: 7rem">
-            Assist small veterinarian practices to create a better user
-            experience that not only allows an ease of scheduling appointments,
-            but can also add value by offering additional classified sections.
-          </p>
+        <div class="project-container">
+          <div class="container portfolioDiv">
+            <a
+              href="https://loisimonca.github.io/password-generator/"
+              target="_blank"
+              class="card containerPortfolio1"
+            >
+              <div class="card-body">
+                <img id="port1" src="assets/css/images/password1.jpg" />
+                <img class="port1a" src="assets/css/images/password copy.jpg" />
+              </div>
+            </a>
+            <p class="project-description">
+              Assist small veterinarian practices to create a better user
+              experience that not only allows an ease of scheduling
+              appointments, but can also add value by offering additional
+              classified sections.
+            </p>
+          </div>
         </div>
         <div class="container portfolioDiv">
           <a

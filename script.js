@@ -1,14 +1,5 @@
 const main = document.querySelector(".main");
 const nav = document.querySelector(".navbar");
-const translate = document.querySelectorAll(".translate");
-const transloose = document.querySelectorAll(".transloose");
-const graphicHeader = document.querySelector(".graphic-designer");
-const webDevHeader = document.querySelector(".web-developer");
-const iAm = document.querySelector(".i-am-a");
-const iAmLois = document.querySelector(".i-am-lois");
-const header = document.querySelector("header");
-let header_height = header.offsetHeight;
-// console.log(header.offsetHeight);
 
 const offset = main.offsetHeight - nav.offsetHeight;
 
@@ -22,33 +13,34 @@ window.onscroll = function () {
   }
 };
 
-window.addEventListener("scroll", () => {
-  let scroll = window.pageYOffset;
-  console.log(scroll);
-  console.log(header_height);
-  // transloose.forEach((El) => {
-  //   let speed = El.dataset.speed;
-  //   El.style.transform = `translateY(${scroll * speed}px)`;
-  // });
-  translate.forEach((element) => {
-    let speed = element.dataset.speed;
-    element.style.transform = `translateY(${scroll * speed}px)`;
+$(function () {
+  $(".navbar-nav a").click(function () {
+    $(".nav-link").removeClass("active");
+    // $(".navba-nav a").removeClass("active");
+    $(this).addClass("active");
   });
-  // webDevHeader.style.opacity = -scroll / (header_height / 6) + 3;
-  // graphicHeader.style.opacity = -scroll / (header_height / 2) + 1.1;
-  // if (scroll < 50) {
-  //   graphicHeader.style.opacity = scroll / (header_height * 12);
-  // } else {
-  //   graphicHeader.style.opacity = 1;
-  // }
-  // if (scroll > 300) {
-  //   graphicHeader.style.opacity = -scroll / (header_height / 2) + 1;
-  // }
-  // if (scroll > 400) {
-  //   iAm.style.opacity = -scroll / header_height + 0.6;
-  //   iAmLois.style.opacity = -scroll / header_height + 0.6;
-  // } else {
-  //   iAm.style.opacity = 1;
-  //   iAmLois.style.opacity = 1;
-  // }
+});
+
+$(function () {
+  $("#see-my-work").click(function () {
+    // $(".navba-nav a").removeClass("active");
+    $(".contact-link").addClass("active");
+  });
+});
+
+jQuery(function ($) {
+  $(".about-link").click(function (e) {
+    // e.preventDefault();
+
+    $("html,body").animate(
+      {
+        scrollTop:
+          $(
+            "#" + $(".about-link").attr("href").split("#").slice(-1)[0]
+          ).offset().top - $(".x-navbar").height(),
+      },
+      700,
+      "swing"
+    );
+  });
 });
