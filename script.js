@@ -27,20 +27,3 @@ $(function () {
     $(".contact-link").addClass("active");
   });
 });
-
-jQuery(function ($) {
-  $(".about-link").click(function (e) {
-    // e.preventDefault();
-
-    $("html,body").animate(
-      {
-        scrollTop:
-          $(
-            "#" + $(".about-link").attr("href").split("#").slice(-1)[0]
-          ).offset().top - $(".x-navbar").height(),
-      },
-      700,
-      "swing"
-    );
-  });
-});

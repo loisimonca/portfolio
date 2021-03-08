@@ -56,7 +56,7 @@ body {
   color: white;
   border: transparent solid 4px;
   font-weight: 800;
-  padding-left: 10px !important;
+  padding: 10px !important;
   margin-right: 5px;
 }
 
@@ -195,7 +195,7 @@ section {
   transition: width 2s, height 2s, transform 0.25s;
 } */
 .img-responsive:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 .linkedin-img {
   width: 30px !important;
@@ -236,16 +236,19 @@ section {
   margin-top: 18px;
   opacity: 0;
 }
-.project-container {
+/* .project-container {
   height: 18rem;
   width: 319px !important;
   margin: auto !important;
   margin-top: 30px !important;
   transition-duration: 0.8s;
-}
+} */
 .portfolioDiv {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  height: 18rem;
+  width: 319px !important;
+  margin: auto !important;
+  margin-top: 30px !important;
+  transition-duration: 0.8s;
 }
 .containerPortfolio1 {
   position: relative;
@@ -306,18 +309,18 @@ section {
 .containerPortfolio1:hover #port1 {
   opacity: 0;
 }
-.project-container:hover {
+.portfolioDiv:hover {
   height: 25rem !important;
   transition: 0.57s;
   transition-duration: 0.2s ease-in-out;
 }
-.project-container:hover .project-description {
+.portfolioDiv:hover .project-description {
   opacity: 1 !important;
   transition: 0.7s;
 }
 .containerPortfolio1:hover .port1a {
   /* opacity: 1; */
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   top: 0;
   left: 0;
 }
@@ -330,7 +333,7 @@ section {
 
 #port2:hover {
   background-image: url("./images/movie-chews\ copy.jpg");
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.2s;
 }
 .card {
@@ -345,7 +348,7 @@ section {
 
 #port3:hover {
   background-image: url("./images/weather.jpg");
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.2s;
 }
 #port4 {
@@ -356,7 +359,7 @@ section {
 
 #port4:hover {
   background-image: url("./images/password\ copy.jpg");
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.3s;
 }
 #port5 {
@@ -367,7 +370,7 @@ section {
 
 #port5:hover {
   background-image: url("./images/peach2.jpg");
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.3s;
 }
 
@@ -379,7 +382,7 @@ section {
 
 #port6:hover {
   background-image: url("./images/notes2.jpg");
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.3s;
 }
 
@@ -442,13 +445,24 @@ button:hover {
     line-height: 40px;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .container {
     width: 80%;
     margin: 50px auto;
   }
   .navbar-light .navbar-nav .nav-link {
     text-align: center !important;
+  }
+  .bio-container {
+    width: 90%;
+    margin: auto !important;
+  }
+  .bio {
+    padding: 0px;
+  }
+  .languages {
+    width: 90%;
+    margin: auto;
   }
 }
 /* @media only screen and (max-width: 800px) {
