@@ -53,7 +53,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-header:after {
+/* header:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -61,7 +61,7 @@ header:after {
   left: 0;
   top: 0;
   z-index: 25;
-}
+} */
 
 #me-graphic {
   width: 600px;
@@ -79,10 +79,13 @@ header:after {
 }
 #see-my-work {
   border-radius: 50px;
-  z-index: 500;
+  z-index: 99999 !important;
   width: 200px;
+  height: 70px;
   font-size: 25px !important;
-  background-color: mediumaquamarine;
+}
+#see-my-work:hover {
+  background: rgb(109, 153, 140) (107, 107, 107) !important;
 }
 .i-am-lois {
   font-size: 4vw;
@@ -450,7 +453,19 @@ button {
 button:hover {
   background-color: rgb(142, 167, 168) !important;
 }
-
+@media only screen and (max-width: 920px) {
+  #me-graphic {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    transition-duration: 3s;
+  }
+  .i-am-lois {
+    margin-top: 90px;
+    font-size: 35px !important;
+    line-height: 40px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .container {
     width: 80%;
@@ -460,12 +475,40 @@ button:hover {
     text-align: center !important;
   }
 }
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .parallax {
     background-image: url("./images/background-mobile.jpg");
     background-position: center;
     background-size: contain !important;
     background-attachment: scroll !important;
-    /* height: 300px; */
+
+  }
+} */
+
+@media screen and (max-width: 660px) {
+  #header-font {
+    font-size: 40px;
+  }
+  #me-graphic {
+    margin-left: -100px !important;
+    transition-duration: 3s;
+    /* width: 300px;
+    height: auto;
+    margin: 0;
+    margin-top: -36px;
+    padding: 0;
+    margin-left: -10px !important; */
+    opacity: 0.3;
+  }
+  #see-my-work {
+    height: 50px;
+  }
+  .i-am-lois {
+    text-align: center !important;
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    font-size: 25px !important;
+    line-height: 30px;
   }
 }
