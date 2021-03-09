@@ -23,8 +23,8 @@
       rel="stylesheet"
     />
     <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -35,19 +35,6 @@
     <div class="main">
       <!-- This section is the navigation bar  -->
       <header>
-        <!-- <a class="navbar-brand" href="index.html"> Lois </a> -->
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
         <!-------------------------- These are the navigation buttons  ----------------------------->
         <div
           class="navbar navbar-expand-lg navbar-light bg-light bottom-nav justify-content-end"
@@ -55,7 +42,7 @@
           <nav class="navbar-nav justify-content-end">
             <hr />
             <a href="#target2" class="nav-link about-link">About</a>
-            <a href="#target1" class="nav-link">Portfolio</a>
+            <a href="#target1" class="nav-link portfolio-link">Portfolio</a>
             <a href="#target" class="nav-link contact-link">Contact</a>
             <a
               target="_blank"
@@ -99,14 +86,14 @@
     </div>
     <div class="container">
       <!-------------------------- This section is the about me -------------------->
-      <div id="target2"></div>
+
       <div>
         <div>
-          <section class="row">
+          <section id="target2" class="row">
             <div class="col-md-12">
-              <div class="row">
+              <!-- <div class="row">
                 <h1 class="about"></h1>
-              </div>
+              </div> -->
               <div class="row">
                 <div class="col">
                   <!-- <img
@@ -169,7 +156,7 @@
           </div>
         </div>
 
-        <div class="container portfolioDiv">
+        <div class="container parent portfolioDiv">
           <a
             href="http://dvmbuddy.herokuapp.com/"
             target="_blank"
@@ -181,14 +168,20 @@
               <img class="port1a" src="assets/css/images/dvmBuddy-hover.jpg" />
             </div>
           </a>
-          <p class="project-description" style="width: 20rem; height: 7rem">
-            Assist small veterinarian practices to create a better user
-            experience that not only allows an ease of scheduling appointments,
-            but can also add value by offering additional classified sections.
+          <p class="project-description">
+            The purpose for this application is to assist veterinarian practices
+            to create a better user experience that not only allows an ease of
+            scheduling appointments, but can also add value by offering
+            additional classified sections.
+          </p>
+
+          <hr />
+          <p class="tools">
+            JavaScript | Bulma | React Js | Mongoose | Express
           </p>
         </div>
 
-        <div class="container portfolioDiv">
+        <div class="container parent portfolioDiv">
           <a
             href="https://radiant-fortress-68045.herokuapp.com/"
             target="_blank"
@@ -203,16 +196,18 @@
               />
             </div>
           </a>
-          <p class="project-description" style="width: 20rem; height: 7rem">
+          <p class="project-description">
             This Burger App allows a user to type a burger name and submit it to
-            be "devoured". The burger on the left side of the page waiting to be
-            devoured. Each burger on the left side of the page has a Devour It
-            button. When the user clicks the button, the burger will move to the
-            right side of the page. All burgers are stored in a MySQL database.
+            the burger list. Each burger has a "Devour It" button that when
+            clicked, the burger will move to the eaten section which then can be
+            deleted. All burgers are stored in a MySQL database.
           </p>
+
+          <hr />
+          <p class="tools">MySQL | Node | Express | Handlebars</p>
         </div>
 
-        <div class="container portfolioDiv">
+        <div class="container parent portfolioDiv">
           <a
             href="https://loisimonca.github.io/password-generator/"
             target="_blank"
@@ -331,28 +326,45 @@
           </form>
         </div>
       </section>
-
-      <!-----------------------This is the footer ------------------------------------>
-      <footer id="footer" class="row">
-        <p>&#169; Copyright</p>
-      </footer>
-
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"
-      ></script>
-      <script src="script.js"></script>
     </div>
+    <div class="media-div">
+      <a
+        target="_blank"
+        class="linkedin nav-media-link"
+        href="https://www.linkedin.com/in/lois-simonca-598abb16a"
+      >
+        <img
+          class="linkedin-img"
+          src="assets/css/images/linked-in-white.png"
+          alt="LinkedIn Logo"
+      /></a>
+      <a
+        target="_blank"
+        class="github nav-media-link"
+        href="https://github.com/loisimonca"
+      >
+        <img
+          class="github"
+          src="assets/css/images/github-white.png"
+          alt="Github Logo"
+      /></a>
+    </div>
+
+    <!-----------------------This is the footer ------------------------------------>
+    <footer id="footer" class="row">
+      <p>&#169; Copyright</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

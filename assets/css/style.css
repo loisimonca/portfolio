@@ -6,7 +6,7 @@ body {
   margin: 0px;
   padding: 0;
   background-color: white;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -46,12 +46,12 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  border-color: white;
   border-radius: 10px;
   color: white !important;
   border: solid white 4px !important;
-  transition-duration: 0.2s;
+  transition-duration: 1s !important;
 }
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
   border: transparent solid 4px;
@@ -71,6 +71,10 @@ body {
   padding-bottom: 1px;
   transition-duration: 0.2s;
   color: white;
+}
+.navbar-light .navbar-nav .nav-link:visited {
+  color: white !important;
+  transition-delay: 0s;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   border-bottom: solid white 4px;
@@ -156,9 +160,9 @@ h1 {
   margin-bottom: 30px;
 }
 
-.contact {
+/* .contact {
   margin-top: 100px;
-}
+} */
 section {
   background-color: white;
 }
@@ -169,7 +173,7 @@ section {
 }
 .bio {
   font-size: 20px;
-  line-height: 40px;
+  line-height: 60px;
   margin-left: 10px;
   padding-right: 50px;
   text-align: justify;
@@ -177,7 +181,7 @@ section {
 
 .languages {
   float: right;
-  border: 3px #c8dedf solid;
+  border: 5px black solid;
   padding: 20px;
   width: 30%;
 }
@@ -195,18 +199,7 @@ section {
   text-align: center;
   line-height: 30px;
 }
-/* .linkedin {
-  width: 20px;
-} */
 
-/* img {
-  width: 100%;
-  margin: 30px;
-  transition: width 2s, height 2s, transform 0.25s;
-} */
-.img-responsive:hover {
-  /* transform: scale(1.05); */
-}
 .linkedin-img {
   width: 30px !important;
 }
@@ -236,35 +229,28 @@ section {
   margin-top: 0px;
   padding-top: 20px;
 }
-/* #page-container,
-#content-wrap {
-  padding: 0;
-  background-color: brown;
-} */
-/* 
-#content-wrap {
-  padding-bottom: 100px;
-} */
+
 .card-body {
   padding: 0;
 }
 .project-description {
   margin-top: 18px;
-  opacity: 0;
+  padding: 10px;
 }
-/* .project-container {
-  height: 18rem;
-  width: 319px !important;
-  margin: auto !important;
-  margin-top: 30px !important;
-  transition-duration: 0.8s;
-} */
+.portfolio-header {
+  margin-top: 70px;
+}
 .portfolioDiv {
-  height: 18rem;
+  height: 35rem;
   width: 319px !important;
   margin: auto !important;
+
   margin-top: 30px !important;
   transition-duration: 0.8s;
+}
+.tools {
+  font-size: 13.5px;
+  font-style: italic;
 }
 .containerPortfolio1 {
   position: relative;
@@ -285,23 +271,13 @@ section {
   width: 319px !important;
   height: 254px !important;
   object-fit: cover !important;
-  /* opacity: 1;
-  display: block;
-  width: 100%;
-  margin: 0 !important;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  object-fit: cover; */
 }
 .card-body > img {
   width: 100%;
   margin: 0px;
-  /* width: 319px !important;
-  height: 254px !important;
-  object-fit: cover !important; */
   transition: width 2s, height 2s, transform 0.2s;
 }
+
 .port1a {
   opacity: 1;
   position: relative;
@@ -309,27 +285,13 @@ section {
   height: 254px !important;
   object-fit: cover !important;
   z-index: 4;
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
   text-align: center;
   transition: 0.2s ease;
-  /* opacity: 0;
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  margin: 0 !important;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; */
 }
 .containerPortfolio1:hover #port1 {
   opacity: 0;
 }
-.portfolioDiv:hover {
-  height: 25rem !important;
-  transition: 0.57s;
-  transition-duration: 0.2s ease-in-out;
-}
+
 .portfolioDiv:hover .project-description {
   opacity: 1 !important;
   transition: 0.7s;
@@ -448,6 +410,12 @@ button {
 button:hover {
   background-color: rgb(142, 167, 168) !important;
 }
+.media-div {
+  background-color: rgba(142, 167, 168) !important;
+  width: 100%;
+  height: 100px;
+  margin-top: 70px;
+}
 @media only screen and (max-width: 920px) {
   #me-graphic {
     width: 500px;
@@ -492,17 +460,12 @@ button:hover {
 } */
 
 @media screen and (max-width: 660px) {
-  .portfolioDiv {
-    height: 25rem !important;
-  }
-
   #header-font {
     font-size: 40px;
   }
-  .project-description {
+  /* .project-description {
     margin-top: 18px;
-    opacity: 1;
-  }
+  } */
   #me-graphic {
     margin-left: -100px !important;
     transition-duration: 3s;
