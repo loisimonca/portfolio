@@ -526,3 +526,29 @@ button:hover {
     line-height: 30px;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .navbar-light .navbar-nav .nav-link {
+    border: transparent solid 4px;
+    font-weight: 800;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px !important;
+    margin-top: 8px;
+    margin-right: 0px !important;
+  }
+  .linkedin-img {
+    margin-right: 0px !important;
+    width: 30px !important;
+  }
+  .github {
+    margin-right: 0px !important;
+    width: 50px !important;
+    padding: 0px !important;
+  }
+  .github img {
+    width: 30px !important;
+    height: auto;
+    margin-top: 7px;
+  }
+}
