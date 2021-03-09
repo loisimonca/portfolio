@@ -64,7 +64,7 @@ body {
   border: transparent solid 4px;
   font-weight: 800;
   padding: 10px !important;
-  margin-right: 5px;
+  /* margin-right: 5px; */
 }
 .nav-media-link:hover {
   border-bottom: solid white 4px;
@@ -184,10 +184,21 @@ section {
   border: 5px black solid;
   padding: 20px;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .languages p {
   text-align: center;
   font-size: 20px;
+  font-weight: 700;
+}
+/* .language-div-content {
+  margin-top: 10%;
+  margin-bottom: 10%;
+} */
+.language-hr {
+  width: 40%;
 }
 .languages ul {
   text-align: center;
@@ -413,15 +424,48 @@ button:hover {
 .media-div {
   background-color: rgba(142, 167, 168) !important;
   width: 100%;
-  height: 100px;
+  height: 50px;
   margin-top: 70px;
+  align-items: center;
 }
-@media only screen and (max-width: 920px) {
+
+.media-container {
+  width: 80px;
+  margin: auto;
+}
+
+.media-container .linkedin-img {
+  margin-top: 9px;
+}
+/* .media-container .github {
+  margin-left: 8px;
+} */
+.media-container .github:hover {
+  border: none !important;
+  width: 30px !important;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+}
+@media only screen and (max-width: 990px) {
   #me-graphic {
     width: 500px;
     height: auto;
     margin-top: 50px;
     transition-duration: 3s;
+  }
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+  .languages {
+    width: 90%;
+    margin: auto;
+  }
+  .bio-container {
+    width: 90%;
+    margin: auto !important;
   }
   .i-am-lois {
     margin-top: 90px;
@@ -430,24 +474,17 @@ button:hover {
   }
 }
 @media only screen and (max-width: 600px) {
-  .container {
-    width: 80%;
-    margin: 50px auto;
-  }
   .navbar-light .navbar-nav .nav-link {
     text-align: center !important;
   }
-  .bio-container {
-    width: 90%;
-    margin: auto !important;
-  }
+
   .bio {
     padding: 0px;
   }
-  .languages {
+  /* .languages {
     width: 90%;
     margin: auto;
-  }
+  } */
 }
 /* @media only screen and (max-width: 800px) {
   .parallax {

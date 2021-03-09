@@ -43,7 +43,7 @@ $(document).ready(function () {
   $(".portfolio-link").on("click", function (e) {
     e.preventDefault();
     const href = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(href).offset().top - 86 }, 300);
+    $("html, body").animate({ scrollTop: $(href).offset().top - 56 }, 300);
   });
   function setActiveListElements(e) {
     // e.preventDefault;
