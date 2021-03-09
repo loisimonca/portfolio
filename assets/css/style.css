@@ -422,7 +422,6 @@ button:hover {
   background-color: rgb(142, 167, 168) !important;
 }
 .media-div {
-  background-color: rgba(142, 167, 168) !important;
   width: 100%;
   height: 50px;
   margin-top: 70px;
@@ -430,24 +429,32 @@ button:hover {
 }
 
 .media-container {
-  width: 80px;
+  width: 140px;
   margin: auto;
 }
+.media-circle {
+  background-color: rgba(142, 167, 168) !important;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.media-circle:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.media-circle .linkedin-img {
+  margin-top: 12px;
+  margin-left: 12px;
+  /* margin: auto; */
+}
+.media-circle .github {
+  margin-top: 10px;
+  margin-left: 5px;
+}
 
-.media-container .linkedin-img {
-  margin-top: 9px;
-}
-/* .media-container .github {
-  margin-left: 8px;
-} */
-.media-container .github:hover {
-  border: none !important;
-  width: 30px !important;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  margin-top: 7px;
-}
 @media only screen and (max-width: 990px) {
   #me-graphic {
     width: 500px;
