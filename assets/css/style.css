@@ -546,6 +546,12 @@ button:hover {
     margin-top: 8px;
     margin-right: 0px !important;
   }
+  .nav-media-link:hover {
+    border-bottom: transparent !important;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: transparent !important;
+  }
   .linkedin-img {
     margin-right: 0px !important;
     width: 30px !important;
