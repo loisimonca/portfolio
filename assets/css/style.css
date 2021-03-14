@@ -552,6 +552,15 @@ button:hover {
   .navbar-light .navbar-nav .nav-link:hover {
     border-bottom: transparent !important;
   }
+  .navbar-light .navbar-nav .active > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show > .nav-link {
+    border-radius: 10px;
+    color: white !important;
+    border: solid white 4px !important;
+    /* transition-duration: 1s !important; */
+  }
   .linkedin-img {
     margin-right: 0px !important;
     width: 30px !important;
