@@ -384,9 +384,11 @@ section {
 
 #footer {
   /* background-color: !important; */
-  width: 100%;
+  width: 100% !important;
 
   margin-top: 50px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
   text-align: center;
   height: 55px;
   position: absolute;
