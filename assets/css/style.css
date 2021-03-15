@@ -252,7 +252,7 @@ section {
   margin-top: 70px;
 }
 .portfolioDiv {
-  height: 35rem;
+  height: 36rem;
   width: 319px !important;
   margin: auto !important;
 
@@ -385,7 +385,7 @@ section {
 #footer {
   /* background-color: !important; */
   width: 100%;
-  /* margin-left: 10% !important; */
+
   margin-top: 50px;
   text-align: center;
   height: 55px;
