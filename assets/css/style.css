@@ -484,6 +484,17 @@ button:hover {
     margin-top: 50px;
     transition-duration: 3s;
   }
+  #see-my-resume {
+    /* margin-left: 30% !important; */
+    display: block;
+    width: 200px;
+    height: 70px !important;
+    margin: 0 auto;
+    padding-top: 5px;
+    margin-bottom: 40px;
+    /* margin-right: 30% !important; */
+    /* font-size: 10px !important; */
+  }
   .container {
     width: 80%;
     margin: 50px auto;
@@ -502,7 +513,8 @@ button:hover {
     line-height: 40px;
   }
 }
-@media only screen and (max-width: 600px) {
+
+@media screen and (max-width: 660px) {
   .navbar-light .navbar-nav .nav-link {
     text-align: center !important;
   }
@@ -510,22 +522,6 @@ button:hover {
   .bio {
     padding: 0px;
   }
-  /* .languages {
-    width: 90%;
-    margin: auto;
-  } */
-}
-/* @media only screen and (max-width: 800px) {
-  .parallax {
-    background-image: url("./images/background-mobile.jpg");
-    background-position: center;
-    background-size: contain !important;
-    background-attachment: scroll !important;
-
-  }
-} */
-
-@media screen and (max-width: 660px) {
   #header-font {
     font-size: 40px;
   }
