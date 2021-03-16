@@ -137,6 +137,24 @@ header {
   transition-duration: 0.3s;
   text-decoration: none;
 }
+
+#see-my-resume {
+  /* margin-top: 140px !important; */
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  padding: 17px;
+  background-color: rgb(96, 117, 121) !important;
+  z-index: 99999 !important;
+  /* width: 200px; */
+  height: 70px !important;
+  /* font-size: 25px !important; */
+}
+#see-my-resume:hover {
+  background: rgb(109, 153, 140) !important;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
 .i-am-lois {
   font-size: 4vw;
   /* animation-duration: 300ms;
